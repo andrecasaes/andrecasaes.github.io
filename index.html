@@ -19,8 +19,8 @@
 			<div><input type="button" name="Entrar" id="Entrar" value="Entrar" onclick="valida();"></div>
 		</div>
 	<div class="footer">
-		<div class="EsqueciSenha"><a href="EsqueciSenha.html">Esqueci minha senha!</a></div>
-		<div class="CadastroAdmin" style="text-align: right;"><a href="CadastroAdmin.html">Cadastro</a></div>
+		<div class="EsqueciSenha"><input type="button" value="Esqueci minha senha" onclick="esqueci();"></div>
+		<div class="CadastroAdmin" style="text-align: right;"><input type="button" value="Cadastro" onclick="cadastra();"></div>
 	</div>
 </body>
 </html>
@@ -37,6 +37,10 @@
 		else document.getElementById("senhaErrada").style.display = "block";
 		return false;
 	}
-	function Enviar() {
+	function esqueci() {
+		window.open("EsqueciSenha.html","_self")
+	}
+	function cadastra() {
+		window.open("CadastraAdmin.html","_self")
 	}
 </script>
