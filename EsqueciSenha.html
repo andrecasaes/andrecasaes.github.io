@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Avalia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<h1 class="h1Laudo">Recuperar Senha</h1>
+	<form method="POST" onsubmit="return valida();" action="index.html">
+		<div style="text-align: center;">
+			<p>Digite o email cadastrado para recuperar a senha!</p>
+			<div><label>Email: <input type="email" name="Email" id="Email"></label>
+				<input type="button" name="Recuperar" id="Recuperar" value="Recuperar" onclick="Recupera();"></div>
+		</div>
+	</form>
+	<div class="footer">
+		<div class="EsqueciSenha"><a href="index.html">Voltar</a></div>
+		<div class="CadastroAdmin" style="text-align: right;"><a href="CadastroAdmin.html">Cadastro</a></div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function valida() {
+		alert("Email Enviado!");
+		return true;
+	}
+	function Recupera() {
+		window.open("index.html", "_self")
+	}
+</script>
