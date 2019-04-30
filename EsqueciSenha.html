@@ -21,7 +21,7 @@
 	</form>
 	<div class="footer">
 		<div class="EsqueciSenha"><a href="index.html">Voltar</a></div>
-		<div class="CadastroAdmin" style="text-align: right;"><a href="CadastroAdmin.html">Cadastro</a></div>
+		<div class="CadastroAdmin" style="text-align: right;"><input type="button" value="Cadastro" onclick="cadastra();"></div>
 	</div>
 </body>
 </html>
@@ -33,5 +33,11 @@
 	}
 	function Recupera() {
 		window.open("index.html", "_self")
+	}
+	function voltar(){
+		window.history.back();
+	}
+	function cadastra() {
+		window.open("CadastraAdmin.html","_self")
 	}
 </script>

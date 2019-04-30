@@ -21,8 +21,7 @@
 			<div><input type="button" name="Entrar" id="Entrar" value="Enviar" onclick="Valida();"></div>
 		</div>
 	<div class="footer">
-		<div class="EsqueciSenha"><a href="index.html">Voltar!</a></div>
-		<div class="CadastroAdmin" style="text-align: right;"><a href="CadastroAdmin.html">Cadastro</a></div>
+		<div class="EsqueciSenha"><input type="button" value="Voltar" onclick="voltar();"></div>
 	</div>
 </body>
 </html>
@@ -38,5 +37,8 @@
 			return true;
 		}else alert("As senhas não são iguais!");
 		return false;
+	}
+	function voltar(){
+		window.history.back();
 	}
 </script>
