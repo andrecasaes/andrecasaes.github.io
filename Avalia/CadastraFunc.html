@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <title>Avalia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<h1 class="h1Laudo">Cadastro de Administradores</h1>
+	<form method="POST" onsubmit="return valida();" action="funcionarios.html">
+		<div style="text-align: center;">
+			<div id="senhaErrada" style="display: none;"><p>Login/Senha errada!</p></div>
+			<div><label>Login: <input type="text" name="Login" id="Login"></label></div>
+			<div><label>Setor: <input type="text" name="Setor" id="Setor"></label></div>
+			<div><label>Cargo: <input type="text" name="Cargo" id="Cargo"></label></div>
+			<div><label>Email: <input type="Email" name="Email" id="Email"></label></div>
+			<div><input type="Submit" name="Entrar" id="Entrar" onclick="enviar()"></div>
+		</div>
+	</form>
+	<div class="footer">
+		<div class="EsqueciSenha"><input type="button" value="Voltar" onclick="voltar();"></div>
+		<!-- <div class="CadastroAdmin" style="text-align: right;"><input type="button" value="Cadastro" onclick="cadastra();"></div> -->
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	function voltar(){
+		window.history.back();
+	}
+
+	// function enviar(){
+	// var nome = [];
+	// var descricao = [];
+	// var json={
+	// 	Login:document.getElementById("Login").value,
+	// 	Setor:document.getElementById("Setor").value,
+	// 	Cargo:document.getElementById("Cargo").value,
+	// 	Email:document.getElementById("Email").value,
+	// 	Avaliado: "N"
+	// };
+		
+	// myJSON=JSON.stringify(json);
+	// localStorage.setItem("Funcionario",myJSON);
+	// }
+		
+</script>

@@ -1,0 +1,372 @@
+body{
+  background-color: #acacac;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1px 1px;
+  grid-template-areas: ". . ." "Os Cod CE" "check1 data botao";
+}
+
+.Titulo { 
+  grid-area: 1 / 1 / 2 / 5; 
+  /*background-color:  white;*/
+}
+.check1{
+  grid-area: check1;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color:  red;*/
+}
+.data{
+  grid-area: data;
+  display: block;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color:  blue;*/
+}
+.botao { 
+  grid-area: botao; 
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  /*background-color: black;*/
+}
+
+.Os { 
+  grid-area: Os; 
+  /*background-color:  blue;*/
+}
+
+.Cod { 
+  grid-area: Cod;
+  /*background-color:  red; */
+}
+
+.CE { 
+  grid-area: CE; 
+  /*background-color:  green;*/
+}
+
+.h1Laudo{
+  text-shadow: transparent;
+  color: black;
+  font-family: 'Chakra Petch', sans-serif;
+  font-style: bold;
+  font-size: 3em;
+  text-align: center;
+}
+.h2forms{
+  text-shadow: transparent;
+  color: black;
+  font-family: 'Chakra Petch', sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  text-align: center;
+}
+.linha{
+  float: left ;
+  height: 192px;
+  white-space: nowrap;
+  width: 100%;
+}
+.func{
+  display: inline-block;
+  vertical-align: middle;
+  background-color: whitesmoke;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  width: 150px;
+  height: 190px;
+}
+
+.pFunc{
+  margin: 15px;
+}
+.inputFunc{
+  width: 50%;
+}
+.formLaudo {
+  text-shadow: transparent;
+  color: black;
+  font-family: 'Comfortaa', cursive;
+  font-style: bold;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    font-family: 'Comfortaa', cursive;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+    font-family: 'K2D', sans-serif;
+}
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+.hrLaudo{
+  border: 0.5px solid #acacac; 
+}
+.hrforms{
+  border: 1px solid #555555; 
+}
+input {
+    border: 2px solid #555555; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 10px;
+    background: white;
+    margin: 0 0 10px 0;
+    placeholder: "OS";
+    outline: none;
+}
+input:hover{
+  opacity: 0.75;
+}
+textarea {
+    border: 2px solid #555555; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 10px;
+    background: white;
+    margin: 0 0 10px 0;
+    outline: none;
+    width: 90%;
+    height: auto;
+    min-height: 310px;
+    resize: vertical;
+    overflow: auto; 
+    overflow-y: auto;
+    word-wrap:break-word;
+    float: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+td{
+  vertical-align: top;
+}
+textarea:hover{
+  opacity: 0.95;
+}
+.label{
+  display: inline-block;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: right;
+}
+.areatexto{
+  display: inline-block;
+    float: center;
+    clear: left;
+    width: 150px;
+    text-align: right;
+}
+label{
+  font-family: 'K2D', sans-serif;
+  padding: 5px;
+}
+.labelTexto{
+  font-family: 'K2D', sans-serif;
+  padding: 5px;
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+.imagem{
+  border-style: solid;
+    border-width: 1px;
+    margin-right: 5px;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.entradaImagem{
+  margin-left: 5px;
+  width: 25%;
+}
+p{
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: bold;
+   text-align:center;
+}
+.footer{
+  /*background-color: green;*/
+  position:absolute;
+  bottom:0;
+  width:99%;
+  height:50px;      /* Height of the footer */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "EsqueciSenha CadastroAdmin";
+  border-top: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.EsqueciSenha { 
+  grid-area: EsqueciSenha; 
+}
+
+.CadastroAdmin { grid-area: CadastroAdmin; }
+
+/*----------------Confere---------------------------------------------*/
+table{
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+
+th{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+}
+td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid black;
+  /*border-left: 1px solid black;*/
+  /*border-right: 1px solid black;*/
+  text-align: center;
+}
+.elementos:hover {
+  background-color:#a0a0a0;
+}
+.botaoBanco{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: red;*/
+}
+
+
+
+
+/* Adicionar funcionarios incone */
+.add{
+  padding: 20px;
+  vertical-align: middle;
+}
+.plus.icon {
+  display: inline-block;
+  color: #000;
+  /* position: absolute; */
+  vertical-align: middle;
+  /* padding-left: 20px; */
+  height: 192px;
+  width: 152px;
+  /* margin-left: 3px; */
+  /* margin-top: 10px; */
+}
+
+.plus.icon:before {
+  content: '';
+  vertical-align: middle;
+
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.plus.icon:after {
+  content: '';
+  position: absolute;
+  /* vertical-align: middle; */
+
+  width: 50px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
