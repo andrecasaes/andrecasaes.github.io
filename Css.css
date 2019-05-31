@@ -1,5 +1,5 @@
 body{
-  background-color: #C8C6D7;
+  background-color: #acacac;
 }
 .grid-container {
   display: grid;
@@ -34,7 +34,6 @@ body{
   display: block;
     margin-left: auto;
     margin-right: auto;
-  background-color: #4F1271;
   /*background-color: black;*/
 }
 
@@ -55,7 +54,7 @@ body{
 
 .h1Laudo{
   text-shadow: transparent;
-  color: #4A4063;
+  color: black;
   font-family: 'Chakra Petch', sans-serif;
   font-style: bold;
   font-size: 3em;
@@ -99,9 +98,9 @@ body{
   font-style: bold;
 }
 .button {
-    background-color: #4F1271; 
+    background-color: #4CAF50; 
     border: none;
-    color: #4F1271;
+    color: white;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -369,14 +368,5 @@ td{
   background-color: currentColor;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-}
-
-/*----------------Adições da Lalá---------------------------------------------*/
-.blocoLogin {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15%;
-  margin-bottom: 20%;
 }
 
