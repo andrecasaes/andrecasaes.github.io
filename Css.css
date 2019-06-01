@@ -38,21 +38,6 @@ body{
   /*background-color: black;*/
 }
 
-.Os { 
-  grid-area: Os; 
-  /*background-color:  blue;*/
-}
-
-.Cod { 
-  grid-area: Cod;
-  /*background-color:  red; */
-}
-
-.CE { 
-  grid-area: CE; 
-  /*background-color:  green;*/
-}
-
 .h1Laudo{
   text-shadow: transparent;
   color: black;
@@ -69,29 +54,41 @@ body{
   font-size: 1em;
   text-align: center;
 }
+.encapsulador {
+  display: block;
+}
 .linha{
   float: left ;
   height: 192px;
-  white-space: nowrap;
   width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.linha2 {
+  margin-top: 10%;
 }
 .func{
   display: inline-block;
   vertical-align: middle;
-  background-color: whitesmoke;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
+  background-image: url("pixil-frame-0 (7) (1).png");
   width: 150px;
   height: 190px;
 }
 
 .pFunc{
-  margin: 15px;
+  text-align: center;
+  font-size: 10px;
 }
-.inputFunc{
-  width: 50%;
+
+.pFuncPrimeiro {
+  margin-top: 125px;
 }
+
+.pFuncUltimo {
+  margin-bottom: 20px;
+}
+
 .formLaudo {
   text-shadow: transparent;
   color: black;
@@ -286,6 +283,19 @@ p{
   grid-template-areas: "EsqueciSenha CadastroAdmin";
   font-family: 'Press Start 2P', cursive;
 }
+
+.header {
+  background-color: #6A1B9A;
+  color: white;
+  text-align: center;
+  position:fixed;
+  top: 0;
+  width:100%;
+  min-height: 50px;
+  max-height:10%;      /* Height of the header */
+  font-family: 'Press Start 2P', cursive;
+}
+
 .EsqueciSenha { 
   grid-area: EsqueciSenha;
   display: block;
@@ -381,6 +391,10 @@ td{
 
   .footer {
     display: block;
+  }
+
+  .header {
+    font-size: 70%;
   }
 }
 
