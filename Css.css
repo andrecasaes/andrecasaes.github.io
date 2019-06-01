@@ -64,14 +64,15 @@ body{
   flex-flow: row wrap;
 }
 .linha2 {
-  margin-top: 10%;
+  margin-top: 50px;
 }
 .func{
   display: inline-block;
   vertical-align: middle;
   background-image: url("pixil-frame-0 (7) (1).png");
-  width: 150px;
-  height: 190px;
+  background-repeat:no-repeat;
+  width: 150px; 
+  height: 235px;
 }
 
 .pFunc{
