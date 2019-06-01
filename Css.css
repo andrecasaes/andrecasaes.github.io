@@ -1,5 +1,5 @@
 body{
-  background-color: #acacac;
+  background-color: #f3e5f5;
 }
 .grid-container {
   display: grid;
@@ -55,7 +55,7 @@ body{
 .h1Laudo{
   text-shadow: transparent;
   color: black;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-style: bold;
   font-size: 3em;
   text-align: center;
@@ -63,7 +63,7 @@ body{
 .h2forms{
   text-shadow: transparent;
   color: black;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-style: italic;
   font-size: 1em;
   text-align: center;
@@ -94,7 +94,7 @@ body{
 .formLaudo {
   text-shadow: transparent;
   color: black;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Press Start 2P', cursive;
   font-style: bold;
 }
 .button {
@@ -107,7 +107,7 @@ body{
     display: inline-block;
     font-size: 17px;
     margin: 4px 2px;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Press Start 2P', cursive;
     -webkit-transition-duration: 0.4s; 
     transition-duration: 0.3s;
     cursor: pointer;
@@ -116,40 +116,55 @@ body{
     background-color: white;
     color: black;
     border: 2px solid #555555;
-    font-family: 'K2D', sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
+
 .button5:hover {
     background-color: #555555;
     color: white;
 }
 .hrLaudo{
   border: 0.5px solid #acacac; 
+  font-family: 'Press Start 2P', cursive;
 }
 .hrforms{
   border: 1px solid #555555; 
+  font-family: 'Press Start 2P', cursive;
 }
-input {
-    border: 2px solid #555555; 
-    -webkit-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
-    -moz-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
-    box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
+input[type=text], input[type=password], input[type=email]{
+  font-family: 'Press Start 2P', cursive;
+    border: 0px;  
     padding: 10px;
     background: white;
     margin: 0 0 10px 0;
-    placeholder: "OS";
     outline: none;
 }
-input:hover{
+input[type=button] {
+  font-family: 'Press Start 2P', cursive;
+}
+.botaoNormal {
+  color: #7B1FA2;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: #7B1FA2;
+  border-width: 2px;
+}
+.botaoFooter {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 2px;
+}
+input[type=button]:hover{
   opacity: 0.75;
 }
 textarea {
     border: 2px solid #555555; 
+    font-family: 'Press Start 2P', cursive;
     -webkit-box-shadow: 
       inset 0 0 8px  rgba(0,0,0,0.1),
             0 0 16px rgba(0,0,0,0.1); 
@@ -177,9 +192,11 @@ textarea {
 }
 td{
   vertical-align: top;
+  font-family: 'Press Start 2P', cursive;
 }
 textarea:hover{
   opacity: 0.95;
+  font-family: 'Press Start 2P', cursive;
 }
 .label{
   display: inline-block;
@@ -187,6 +204,7 @@ textarea:hover{
     clear: left;
     width: 150px;
     text-align: right;
+    font-family: 'Press Start 2P', cursive;
 }
 .areatexto{
   display: inline-block;
@@ -194,13 +212,14 @@ textarea:hover{
     clear: left;
     width: 150px;
     text-align: right;
+    font-family: 'Press Start 2P', cursive;
 }
 label{
-  font-family: 'K2D', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   padding: 5px;
 }
 .labelTexto{
-  font-family: 'K2D', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   padding: 5px;
   display: block;
   padding-left: 15px;
@@ -218,6 +237,7 @@ label{
   display: inline-block;
   width: 50px;
   height: 25px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* Hide default HTML checkbox */
@@ -275,39 +295,42 @@ input:checked + .slider:before {
   width: 25%;
 }
 p{
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: 'Press Start 2P', cursive;
    font-weight: bold;
    text-align:center;
 }
 .footer{
-  /*background-color: green;*/
+  background-color: #6A1B9A;
   position:absolute;
   bottom:0;
-  width:99%;
-  height:50px;      /* Height of the footer */
+  width:100%;
+  height:10%;      /* Height of the footer */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "EsqueciSenha CadastroAdmin";
-  border-top: solid;
-  border-color: black;
-  border-width: 1px;
+  font-family: 'Press Start 2P', cursive;
 }
 .EsqueciSenha { 
-  grid-area: EsqueciSenha; 
+  grid-area: EsqueciSenha;
+  padding: 5%;
 }
 
-.CadastroAdmin { grid-area: CadastroAdmin; }
+.CadastroAdmin { 
+  grid-area: CadastroAdmin;
+  padding: 5%;
+}
 
 /*----------------Confere---------------------------------------------*/
 table{
   border-collapse: collapse;
   font-size: 20px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
 th{
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Press Start 2P', cursive;
   font-size: 20px;
 }
 td{
@@ -317,15 +340,18 @@ td{
   /*border-left: 1px solid black;*/
   /*border-right: 1px solid black;*/
   text-align: center;
+  font-family: 'Press Start 2P', cursive;
 }
 .elementos:hover {
   background-color:#a0a0a0;
+  font-family: 'Press Start 2P', cursive;
 }
 .botaoBanco{
   display: flex;
   align-items: center;
   justify-content: center;
-  /*background-color: red;*/
+  font-family: 'Press Start 2P', cursive;
+    /*background-color: red;*/
 }
 
 
@@ -335,6 +361,7 @@ td{
 .add{
   padding: 20px;
   vertical-align: middle;
+  font-family: 'Press Start 2P', cursive;
 }
 .plus.icon {
   display: inline-block;

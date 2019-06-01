@@ -7,21 +7,22 @@
     <link rel="stylesheet" type="text/css" href="Css.css">
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <title>Avalia</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Avalia.me</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-	<h1 class="h1Laudo">Recuperar Senha</h1>
+	<h1 class="h1Laudo"><img src="/Users/administrador/Desktop/pixil-frame-0 (3).png"></h1>
 	<form method="POST" onsubmit="return valida();" action="index.html">
 		<div style="text-align: center;">
 			<p>Digite o email cadastrado para recuperar a senha!</p>
 			<div><label>Email: <input type="email" name="Email" id="Email"></label>
-				<input type="button" name="Recuperar" id="Recuperar" value="Recuperar" onclick="Recupera();"></div>
+				<input type="button" name="Recuperar" id="Recuperar" value="Recuperar" onclick="Recupera();" class="botaoNormal"></div>
 		</div>
 	</form>
 	<div class="footer">
-		<div class="EsqueciSenha"><input type="button" value="Voltar" onclick="voltar();"></div>
-		<div class="CadastroAdmin" style="text-align: right;"><input type="button" value="Cadastro" onclick="cadastra();"></div>
+		<div class="EsqueciSenha"><input type="button" value="Voltar" onclick="voltar();" class="botaoFooter"></div>
+		<div class="CadastroAdmin" style="text-align: right;"><input type="button" value="Cadastro" onclick="cadastra();" class="botaoFooter"></div>
 	</div>
 </body>
 </html>
