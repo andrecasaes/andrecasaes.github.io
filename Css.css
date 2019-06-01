@@ -58,10 +58,9 @@ body{
   display: block;
 }
 .linha{
-  float: left ;
-  height: 192px;
+  height: auto;
   width: 100%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   display: flex;
   flex-flow: row wrap;
 }
