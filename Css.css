@@ -160,8 +160,12 @@ input[type=button] {
   border-radius: 20px;
   border-color: white;
   border-width: 2px;
-  display: inline-block;
+
+  min-width: 100px;
+  min-height: 30px;
+  display: inline;
 }
+
 input[type=button]:hover{
   opacity: 0.75;
 }
@@ -314,6 +318,7 @@ p{
 }
 .EsqueciSenha { 
   grid-area: EsqueciSenha;
+  display: block;
   margin: 3%;
 }
 
@@ -398,3 +403,17 @@ td{
           transform: rotate(90deg);
 }
 
+@media only screen and (max-width:480px) { 
+  .botaoFooter {
+    width: 100%;
+    display: block;
+  }
+
+  .footer {
+    display: block;
+  }
+
+  .botaoNormal {
+    margin-bottom: 30%;
+  }
+}
