@@ -412,7 +412,9 @@ td{
   .footer {
     display: block;
   }
+}
 
+@media only screen and (max-height:440px) { 
   .botaoNormal {
     margin-bottom: 30%;
   }
