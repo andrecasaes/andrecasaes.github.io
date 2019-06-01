@@ -227,8 +227,8 @@ label{
   text-indent: -15px;
 }
 .imagem{
-  width: 30%;
-  height: 30%;
+  max-width: 30%;
+  height: auto;
 }
 
 .switch {
