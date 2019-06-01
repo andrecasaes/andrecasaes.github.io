@@ -12,56 +12,79 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-	<div style="width: 100%;border-bottom: solid; border-color: black; border-width: 1px;"><h1 class="h1Laudo">Funcionarios</h1></div>
+	<div class="header"><h1>Funcion&aacute;rios</h1></div>
 	
 	<div>
 		<div class="linha2">
-			<div class="h2forms"><h1><u>Avaliados</u></h1></div>
+			<div class="h2forms"><h1><u>N&atilde;o avaliados</u></h1></div>
 		</div><br>
-		<div class="linha" id="avaliados">
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Andre</p>
-				<p class="pFunc">TI</p>
-				<p class="pFunc">Estagiario</p>
-				<input class="inputFunc" type="button" id="Rela" value="Relatorio" onclick="Relatorio();">
-			</div>
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Lais</p>
-				<p class="pFunc">RH</p>
-				<p class="pFunc">Diretora</p>
-				<input class="inputFunc" type="button" id="Rela" value="Relatorio"  onclick="Relatorio();">
+		<div class="encapsulador">
+			<div class="linha" id="NaoAvaliados">
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Julia</p>
+					<p class="pFunc">Contabilidade</p>
+					<p class="pFunc pFuncUltimo">Supervisora</p>
+					<input class="botaoNormal" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+				</div>
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Victor</p>
+					<p class="pFunc">TI</p>
+					<p class="pFunc pFuncUltimo">Trainee</p>
+					<input class="botaoNormal" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+				</div>
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Pedro</p>
+					<p class="pFunc">Vendas</p>
+					<p class="pFunc pFuncUltimo">Estagiario</p>
+					<input class="botaoNormal" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+				</div>
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Levi</p>
+					<p class="pFunc">Marketing</p>
+					<p class="pFunc pFuncUltimo">Diretor</p>
+					<input class="botaoNormal" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+				</div>
+					<img class="add" id="plus" src="plus.png" alt="" width="50px" height="50px">
+				
 			</div>
 		</div>
 		<div class="linha2">
-			<div class="h2forms"><h1><u>Nao Avaliados</u></h1></div>
+			<div class="h2forms"><h1><u>Avalia&ccedil;&atilde;o em andamento</u></h1></div>
 		</div><br>
-		<div class="linha" id="NaoAvaliados">
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Julia</p>
-				<p class="pFunc">Contabilidade</p>
-				<p class="pFunc">Supervisora</p>
-				<input class="inputFunc" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+		<div class="encapsulador">
+			<div class="linha" id="avaliados">
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Andre</p>
+					<p class="pFunc">TI</p>
+					<p class="pFunc pFuncUltimo">Estagiario</p>
+					<input class="botaoNormal" type="button" id="Rela" value="Avaliar" onclick="avaliaAndamento();">
+				</div>
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Lais</p>
+					<p class="pFunc">RH</p>
+					<p class="pFunc pFuncUltimo">Diretora</p>
+					<input class="botaoNormal" type="button" id="Rela" value="Avaliar"  onclick="avaliaAndamento();">
+				</div>
 			</div>
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Victor</p>
-				<p class="pFunc">TI</p>
-				<p class="pFunc">Trainee</p>
-				<input class="inputFunc" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
+		</div>
+		<div class="linha2">
+			<div class="h2forms"><h1><u>Avaliados</u></h1></div>
+		</div><br>
+		<div class="encapsulador">
+			<div class="linha" id="avaliados">
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Andre</p>
+					<p class="pFunc">TI</p>
+					<p class="pFunc pFuncUltimo">Estagiario</p>
+					<input class="botaoNormal" type="button" id="Rela" value="Relatorio" onclick="Relatorio();">
+				</div>
+				<div class="func" style="text-align: center;">
+					<p class="pFunc pFuncPrimeiro">Lais</p>
+					<p class="pFunc">RH</p>
+					<p class="pFunc pFuncUltimo">Diretora</p>
+					<input class="botaoNormal" type="button" id="Rela" value="Relatorio"  onclick="Relatorio();">
+				</div>
 			</div>
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Pedro</p>
-				<p class="pFunc">Vendas</p>
-				<p class="pFunc">Estagiario</p>
-				<input class="inputFunc" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
-			</div>
-			<div class="func" style="text-align: center;">
-				<p class="pFunc">Levi</p>
-				<p class="pFunc">Marketing</p>
-				<p class="pFunc">Diretor</p>
-				<input class="inputFunc" type="button" id="Avaliar" value="Avaliar" onclick="Avalia();">
-			</div>
-				<img class="add" id="plus" src="plus.png" alt="" width="50px" height="50px">
-			
 		</div>
 	</div>
 </body>
@@ -73,6 +96,9 @@
 	}
 	function Avalia() {
 		window.open("avalia.html", "_self");
+	}
+	function avaliaAndamento() {
+		window.open("avaliaEmAnda.html", "_self");
 	}
 	// Faz o botão de add funcionario funcionar!
 	document.getElementById("plus").onclick = function(){
