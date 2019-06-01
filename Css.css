@@ -159,6 +159,7 @@ input[type=button] {
   border-radius: 20px;
   border-color: white;
   border-width: 2px;
+  display: inline-block;
 }
 input[type=button]:hover{
   opacity: 0.75;
@@ -227,7 +228,7 @@ label{
   text-indent: -15px;
 }
 .imagem{
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
 }
 
@@ -312,12 +313,12 @@ p{
 }
 .EsqueciSenha { 
   grid-area: EsqueciSenha;
-  padding: 5%;
+  margin: 3%;
 }
 
 .CadastroAdmin { 
   grid-area: CadastroAdmin;
-  padding: 5%;
+  margin: 3%;
 }
 
 /*----------------Confere---------------------------------------------*/
