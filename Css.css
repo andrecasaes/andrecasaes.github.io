@@ -71,8 +71,9 @@ body{
   display: inline-block;
   vertical-align: middle;
   background-image: url("pixil-frame-0 (7) (1).png");
+  background-repeat:no-repeat;
   width: 150px;
-  height: 190px;
+  height: auto;
 }
 
 .pFunc{
