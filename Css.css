@@ -226,10 +226,8 @@ label{
   text-indent: -15px;
 }
 .imagem{
-  border-style: solid;
-    border-width: 1px;
-    margin-right: 5px;
-
+  width: 100%;
+  height: auto;
 }
 
 .switch {
