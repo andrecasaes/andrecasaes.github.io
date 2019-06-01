@@ -1,5 +1,6 @@
 body{
   background-color: #f3e5f5;
+  margin: 0;
 }
 .grid-container {
   display: grid;
@@ -149,7 +150,7 @@ input[type=button] {
   border-radius: 20px;
   border-color: #7B1FA2;
   border-width: 2px;
-  padding-bottom: 10px;
+  margin-bottom: 10%;
 }
 .botaoFooter {
   font-family: 'Press Start 2P', cursive;
@@ -159,7 +160,12 @@ input[type=button] {
   border-radius: 20px;
   border-color: white;
   border-width: 2px;
+
+  min-width: 100px;
+  min-height: 30px;
+  display: inline;
 }
+
 input[type=button]:hover{
   opacity: 0.75;
 }
@@ -197,7 +203,7 @@ label{
   text-indent: -15px;
 }
 .imagem{
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
 }
 
@@ -273,7 +279,7 @@ p{
   position:fixed;
   bottom:0;
   width:100%;
-  height:10%;      /* Height of the footer */
+  min-height:10%;      /* Height of the footer */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -282,12 +288,13 @@ p{
 }
 .EsqueciSenha { 
   grid-area: EsqueciSenha;
-  padding: 5%;
+  display: block;
+  margin: 3%;
 }
 
 .CadastroAdmin { 
   grid-area: CadastroAdmin;
-  padding: 5%;
+  margin: 3%;
 }
 
 /*----------------Confere---------------------------------------------*/
@@ -366,3 +373,19 @@ td{
           transform: rotate(90deg);
 }
 
+@media only screen and (max-width:480px) { 
+  .botaoFooter {
+    width: 100%;
+    display: block;
+  }
+
+  .footer {
+    display: block;
+  }
+}
+
+@media only screen and (max-height:440px) { 
+  .botaoNormal {
+    margin-bottom: 30%;
+  }
+}
