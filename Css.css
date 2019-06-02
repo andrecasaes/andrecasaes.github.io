@@ -469,11 +469,13 @@ span {
 h2 {
   font-family: 'Press Start 2P', cursive;
   margin: 20px;
+  font-size: 90%;
 }
 
 p {
   font-family: 'Press Start 2P', cursive;
   margin-left: 20px;
+  font-size: 80%;
 }
 
 textarea {
@@ -481,6 +483,9 @@ textarea {
   margin-top: 10px;
   width: 250px;
   height: 60px;
+  font-family: 'Press Start 2P', cursive;
+  border: none;
+  border-radius: 20px;
 }
 
 .ultimaTextarea {
@@ -500,10 +505,6 @@ textarea {
 
   p {
     text-align: center;
-  }
-
-  h2 {
-    font-size: 90%;
   }
 }
 
