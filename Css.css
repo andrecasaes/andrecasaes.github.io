@@ -73,10 +73,13 @@ body{
   background-repeat:no-repeat;
   width: 150px; 
   height: 235px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .pFunc{
   text-align: center;
+  margin-left: 5px;
   font-size: 10px;
 }
 
