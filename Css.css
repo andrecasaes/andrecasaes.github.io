@@ -504,6 +504,39 @@ textarea {
   margin-bottom: 150px;
 }
 
+.imgRelatorio {
+  margin-top: 100px;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloComentarioRelatorio {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 120%;
+}
+
+details {
+  font-family: 'Press Start 2P', cursive;
+  background: #cebad1;
+  font-size: 70%;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  margin-left: 40%;
+  width: 20%;
+}
+
+.comentarioRelatorio {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.detailsUltimo {
+  margin-bottom: 100px;
+}
 
 @media only screen and (max-width:480px) { 
   .botaoFooter {
@@ -517,6 +550,20 @@ textarea {
 
   p {
     text-align: center;
+  }
+
+  .imgRelatorio {
+    width: 80%;
+  }
+
+  details {
+    margin-left: 2%;
+    width: 90%;
+  }
+
+  .comentarioRelatorio {
+    text-align: left;
+    font-family: 'Press Start 2P', cursive;
   }
 }
 
