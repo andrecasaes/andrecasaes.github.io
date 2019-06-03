@@ -16,11 +16,11 @@
 <body>
     <div class="header"><h1>Avaliar (Nome)</h1></div>
     <div class="headerForm">
-        <input type="button" name="Etica" value="Etica" onclick="Et();" class="botaoForm">
-        <input type="button" name="Conhecimento Tecnico" value="Conhecimento Tecnico" onclick="Ct();" class="botaoForm">
-        <input type="button" name="Desempenho" value="Desempenho" onclick="De();" class="botaoForm">
-        <input type="button" name="Comportamento" value="Comportamento" onclick="Co();" class="botaoForm">
-        <input type="button" name="Responsabilidade" value="Responsabilidade" onclick="Re();" class="botaoForm">
+        <input type="button" name="Etica" id="botEt" value="Etica" onclick="Et();" class="botaoForm">
+        <input type="button" name="Conhecimento Tecnico" id="botCt" value="Conhecimento Tecnico" onclick="Ct();" class="botaoForm">
+        <input type="button" name="Desempenho" id="botDe" value="Desempenho" onclick="De();" class="botaoForm">
+        <input type="button" name="Comportamento" id="botCo" value="Comportamento" onclick="Co();" class="botaoForm">
+        <input type="button" name="Responsabilidade" id="botRe" value="Responsabilidade" onclick="Re();" class="botaoForm">
     </div>
     <br>
     <h1 style="text-align: center; font-family: 'Press Start 2P', cursive; font-size: 80%" id="inicio">Selecione a categoria que deseja avaliar!</h1>
@@ -785,12 +785,39 @@
 
 </html>
 <script type="text/javascript">
+    var PreEt = false;
+    var PreCt = false;
+    var PreDe = false;
+    var PreCo = false;
+    var PreRe = false;
+
     function voltar() {
             window.history.back();
         }
     function Enviar() {
-        alert("Funcionário avaliado com sucesso!");
-        window.open("Funcionarios.html","_self")
+        
+        if (!PreEt) {
+            PreEt = true;
+            document.getElementById("botEt").className = "botaoFormMaisEscuro";
+            Ct();
+        }else if(PreEt && !PreCt){
+            PreCt = true;
+            document.getElementById("botCt").className = "botaoFormMaisEscuro";
+            De();
+        } else if (PreEt && PreCt && !PreDe) {
+            PreDe = true;
+            document.getElementById("botDe").className = "botaoFormMaisEscuro";
+            Co();
+        } else if (PreEt && PreCt && PreDe && !PreCo) {
+            PreCo = true;
+            document.getElementById("botCo").className = "botaoFormMaisEscuro";
+            Re();
+        } else if (PreEt && PreCt && PreDe && PreCo && !PreRe) {
+            PreRe = true;
+            document.getElementById("botRe").className = "botaoFormMaisEscuro";
+            alert("Funcionario avaliado com sucesso!");
+            window.open("Funcionarios.html", "_self");
+        }
     }
     function Et() {
         document.getElementById("Et").style.display = "inline";

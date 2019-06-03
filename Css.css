@@ -157,6 +157,15 @@ input[type=button] {
   border-width: 2px;
   margin: 5px;
 }
+.botaoFormMaisEscuro {
+  color: white;
+  padding: 10px;
+  background-color: #6A1B9A;
+  border-radius: 20px;
+  border-color: white;
+  border-width: 2px;
+  margin: 5px;
+}
 .botaoFooter {
   font-family: 'Press Start 2P', cursive;
   color: white;
