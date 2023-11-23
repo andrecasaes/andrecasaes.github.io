@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=0, minimum-scale=1.0">
+  <meta name="generator" content="lume">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/site.css">
+  <title>Andre Casaes · life</title>
+  <style>
+    :root {
+      --acc: var(--green);
+    }
+  </style>
+  <script src="assets/js.js"></script>
+  <script defer="" data-domain="fserb.com" src="https://metaphora.co/plausible.js"></script>
+
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <div id="header">
+      <div class="minibox"></div>
+      <h1><a href="..">Andre Casaes - My Life</a></h1>
+    </div>
+
+    <style>
+      :root {
+        --c0: #ABBCD2;
+        --c1: #8EA5D3;
+        --c2: #D288C3;
+        --c3: #E192B6;
+        --c4: #F98BA6;
+        --c5: #F9AC8E;
+        --c6: #F9CB70;
+        --c7: #AFE376;
+        --c8: #6CE8BB;
+        --c9: #6BD1AF;
+        --c10: #72C0C3;
+        --c11: #9FA1C1;
+        --c12: #A298B8;
+      }
+
+      #life {
+        margin: 60px auto;
+        width: calc(52 * 10px + 270px);
+      }
+
+      #life .year {
+        display: block;
+        width: calc(52 * 10px + 270px);
+        line-height: 10px;
+        height: 10px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+      }
+
+      #life .markyear {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      #life .yearname {
+        font-size: 8px;
+        line-height: 10px;
+        height: 10px;
+        margin: 0;
+        padding: 0 4px 0 0;
+        color: #AAA;
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        width: 135px;
+      }
+
+      #life .yearname.boldyear {
+        color: #444;
+      }
+
+      #life .weeks {
+        display: inline-block;
+      }
+
+      #life .week {
+        vertical-align: middle;
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        line-height: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+      }
+
+      #life .cell,
+      #legend .week,
+      #bar .week,
+      #intro .week {
+        display: block;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        width: 6px;
+        height: 6px;
+        border-radius: 1px;
+        margin: 1px;
+        background-clip: content-box;
+      }
+
+      #life .week:hover .cell {
+        /*border: 2px solid #444;*/
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+
+      #life .week.future .cell {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent !important;
+      }
+
+      #life .week.beforeborn .cell {
+        border: 1px solid rgba(0, 0, 0, 0.0);
+        background-color: transparent !important;
+      }
+
+      #legend {
+        font-size: 12px;
+        color: #444;
+        margin-top: 40px;
+        text-align: right;
+      }
+
+      #bar {
+        width: 135px;
+        box-sizing: border-box;
+        float: right;
+        display: inline-block;
+
+        vertical-align: middle;
+        line-height: 0;
+        padding: 2px 0 0 0;
+        margin: 0;
+        border: 0;
+      }
+
+      #bar div {
+        font-size: 9px;
+        line-height: 10px;
+        color: #444;
+        height: 10px;
+        margin: 0 0 0 9px;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #bar .r {
+        border-left: 1px solid #444;
+        margin-left: 4px;
+        padding-left: 4px;
+      }
+
+      #bar .rtop {
+        border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, #444 25%) 1 100%;
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        margin-left: 4px;
+        padding-left: 4px;
+      }
+
+      #bar .rbottom {
+        border-image: linear-gradient(to bottom, #444 75%, rgba(0, 0, 0, 0) 75%) 1 100%;
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        margin-left: 4px;
+        padding-left: 4px;
+      }
+
+      #bar .bg0 {
+        background-color: var(--c0);
+        box-shadow: -10px 0 var(--c0);
+      }
+
+      #bar .bg1 {
+        background-color: var(--c1);
+        box-shadow: -10px 0 var(--c1);
+      }
+
+      #bar .bg2 {
+        background-color: var(--c2);
+        box-shadow: -10px 0 var(--c2);
+      }
+
+      #bar .bg3 {
+        background-color: var(--c3);
+        box-shadow: -10px 0 var(--c3);
+      }
+
+      #bar .bg4 {
+        background-color: var(--c4);
+        box-shadow: -10px 0 var(--c4);
+      }
+
+      #bar .bg5 {
+        background-color: var(--c5);
+        box-shadow: -10px 0 var(--c5);
+      }
+
+      #bar .bg6 {
+        background-color: var(--c6);
+        box-shadow: -10px 0 var(--c6);
+      }
+
+      #bar .bg7 {
+        background-color: var(--c7);
+        box-shadow: -10px 0 var(--c7);
+      }
+
+      #bar .bg8 {
+        background-color: var(--c8);
+        box-shadow: -10px 0 var(--c8);
+      }
+
+      #bar .bg9 {
+        background-color: var(--c9);
+        box-shadow: -10px 0 var(--c9);
+      }
+
+      #bar .bg10 {
+        background-color: var(--c10);
+        box-shadow: -10px 0 var(--c10);
+      }
+
+      #bar .bg11 {
+        background-color: var(--c11);
+        box-shadow: -10px 0 var(--c11);
+      }
+
+      #bar .bg12 {
+        background-color: var(--c12);
+        box-shadow: -10px 0 var(--c12);
+      }
+
+      #life .note {
+        position: relative;
+        font-size: 12px;
+        line-height: 14px;
+        background-color: #EEE;
+        border: 1px solid #BDBCB9;
+        width: 150px;
+        padding: 8px;
+        visibility: hidden;
+        opacity: 0.0;
+        transition: visibility 0.2s, opacity 0.2s ease-out;
+      }
+
+      #life .note img {
+        width: 150px;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+
+      #life .cell:hover .note {
+        visibility: visible;
+        opacity: 1.0;
+      }
+
+      #life .cell.cnote_life {
+        background-image: linear-gradient(to bottom right, #444 50%, rgba(0, 0, 0, 0) 50%);
+      }
+
+      #life .cell.cnote_cmp {
+        background-image: linear-gradient(to bottom right, #E12D7F 50%, rgba(0, 0, 0, 0) 50%);
+      }
+
+      #life .cnote_cmp .note {
+        border-color: #e12d7f;
+      }
+
+      #life .cell.cnote_fam {
+        background-image: linear-gradient(to bottom right, #F5EEA8 50%, rgba(0, 0, 0, 0) 50%);
+      }
+
+      #life .cnote_fam .note {
+        border-color: #F5EEA8;
+      }
+
+      #life .cell.cnote_art {
+        background-image: linear-gradient(to bottom right, #67C2C9 50%, rgba(0, 0, 0, 0) 50%);
+      }
+
+      #life .cnote_art .note {
+        border-color: #67C2C9;
+      }
+
+
+      #quote {
+        margin: 60px 0 30px 0;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.5em;
+      }
+
+      #quote span {
+        display: block;
+        font-size: 13px;
+      }
+
+      #intro {
+        font-size: 16px;
+        max-width: 600px;
+        margin: 120px auto 0 auto;
+      }
+    </style>
+
+    <div id="quote">
+      "Leap, and the net will appear." <span>John Burroughs</span>
+    </div>
+
+    <div id="life">
+
+      <div id="bar">
+        <div id="b1998" class="rtop">São Paulo, Brazil</div>
+        <div id="b1999" class="r"></div>
+        <div id="b2000" class="r"></div>
+        <div id="b2001" class="r"></div>
+        <div id="b2002" class="r"></div>
+        <div id="b2003" class="r"></div>
+        <div id="b2004" class="r"></div>
+        <div id="b2005" class="r bg1">Ensino Fundamental</div>
+        <div id="b2006" class="r"></div>
+        <div id="b2007" class="r"></div>
+        <div id="b2008" class="r"></div>
+        <div id="b2009" class="r"></div>
+        <div id="b2010" class="r"></div>
+        <div id="b2011" class="r"></div>
+        <div id="b2012" class="r"></div>
+        <div id="b2013" class="r"></div>
+        <div id="b2014" class="r bg2">Ensino Médio</div>
+        <div id="b2015" class="r"></div>
+        <div id="b2016" class="r"></div>
+        <div id="b2017" class="r bg3">Cursinho Angulo</div>
+        <div id="b2018" class="r bg4">Sistemas de Informação (USP)</div>
+        <div id="b2019" class="r"></div>
+        <div id="b2020" class="r"></div>
+        <div id="b2021" class="r"></div>
+        <div id="b2022" class="r bg5">Arbit Consultoria</div>
+        <div id="b2023" class="r"></div>
+        <div id="b2024" class=""></div>
+        <div id="b2025" class=""></div>
+        <div id="b2026" class=""></div>
+        <div id="b2027" class=""></div>
+        <div id="b2028" class=""></div>
+        <div id="b2029" class=""></div>
+        <div id="b2030" class=""></div>
+        <div id="b2031" class=""></div>
+        <div id="b2032" class=""></div>
+        <div id="b2033" class=""></div>
+        <div id="b2034" class=""></div>
+        <div id="b2035" class=""></div>
+        <div id="b2036" class=""></div>
+        <div id="b2037" class=""></div>
+        <div id="b2038" class=""></div>
+        <div id="b2039" class=""></div>
+        <div id="b2040" class=""></div>
+        <div id="b2041" class=""></div>
+        <div id="b2042" class=""></div>
+        <div id="b2043" class=""></div>
+        <div id="b2044" class=""></div>
+        <div id="b2045" class=""></div>
+        <div id="b2046" class=""></div>
+        <div id="b2047" class=""></div>
+        <div id="b2048" class=""></div>
+        <div id="b2049" class=""></div>
+        <div id="b2050" class=""></div>
+        <div id="b2051" class=""></div>
+        <div id="b2052" class=""></div>
+        <div id="b2053" class=""></div>
+        <div id="b2054" class=""></div>
+        <div id="b2055" class=""></div>
+        <div id="b2056" class=""></div>
+        <div id="b2057" class=""></div>
+        <div id="b2058" class=""></div>
+        <div id="b2059" class=""></div>
+        <div id="b2060" class=""></div>
+        <div id="b2061" class=""></div>
+        <div id="b2062" class=""></div>
+        <div id="b2063" class=""></div>
+        <div id="b2064" class=""></div>
+        <div id="b2065" class=""></div>
+        <div id="b2066" class=""></div>
+        <div id="b2067" class=""></div>
+        <div id="b2068" class=""></div>
+        <div id="b2069" class=""></div>
+        <div id="b2070" class=""></div>
+        <div id="b2071" class=""></div>
+        <div id="b2072" class=""></div>
+        <div id="b2073" class=""></div>
+        <div id="b2074" class=""></div>
+        <div id="b2075" class=""></div>
+        <div id="b2076" class=""></div>
+        <div>Each <div class="week" style="display: inline-block"></div> represents one week.</div>
+      </div>
+    </div>
+
+    <!-- <div id="intro">
+      <p>I've been thinking about my life and I wanted to have some perspective about time.
+
+      </p>
+      <p>I've drawn every week of my life as little squares <span class="week" style="display:inline-block"></span>. I
+        started at my birth. 52 square every year. 95 years in the future.
+
+      </p>
+      <p>Then I started marking events on it: my pets, my siblings, my partner. Where was I? What was I studying or
+        working at? When did I first connected to the internet?
+
+      </p>
+      <p>Then I moved to other people: how old were they when they did some impressive thing? How old were they when
+        they died? How old were my parents when they had me?
+
+      </p>
+      <p>All events are relative to my birth, as if everyone else's life aligns with mine. It's complicated to explain,
+        but intuitive.
+
+      </p>
+      <hr class="small">
+
+      <p>What started as an exercise in life/time visualization ended up as therapy. I felt a bit like a kid being
+        allowed some play time. As if while building this I was authorized to visit the past.
+
+      </p>
+      <p>It was more insightful than I thought it would be. I didn't learn any new information but it still feels like I
+        learned something.
+
+      </p>
+      <p>It also made me think about things I didn't add here. When I first met my friends, my previous partners. The
+        times I had to say goodbye to people that I cared a lot about. The homes I lived, the places I visited. When did
+        I learn about pointers, or calculus. The times my body failed me. The times I failed.
+
+      </p>
+      <p>It felt strange to include "famous dead people". I'm not particularly pop-idol driven. In the end, I chose
+        folks who remind me of different ways of being alive. Folks that give me a sense of perspective.
+
+      </p>
+      <p>Today is October 1st, 2021. I'm writing this a few weeks after finishing the whole thing. Since then, I still
+        catch myself thinking back on those little squares.
+
+      </p>
+      <p>This will probably won't be interesting to anyone else but the few people that know me. And it would probably
+        have served its purpose without me publishing it. But maybe this will inspire other people to do something
+        similar. If it does, I'd love to see your own take on it.
+
+      </p>
+    </div> -->
+
+    <script>
+
+      function getDateOfWeek(y, w) {
+        var d = (1 + (w - 1) * 7); // 1st of January + 7 days for each week
+        return new Date(y, 0, d);
+      }
+
+      function real(y, m = 1, d = 1) {
+        const date = new Date(y, m - 1, d);
+        const days = Math.floor(
+          (date - new Date(date.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24);
+        const week = Math.min(52, Math.ceil(days / 7))
+        return `c${date.getFullYear()}w${week}`;
+      }
+
+      function add(y = 0, m = 0, d = 0) {
+        return real(1998 + y, 11 + m, 27 + d);
+      }
+
+      function delta(y0, m0, d0, y1, m1, d1) {
+        const delta = Math.round(Math.abs(
+          new Date(y1, m1 - 1, d1) - new Date(y0, m0 - 1, d0)) / 1000 / 60 / 60 / 24);
+        return add(0, 0, delta);
+      }
+
+      const today = new Date();
+      const birthday = getDateOfWeek(1998, 48); // new Date(1998, 9, 7);
+      const lastday = getDateOfWeek(1998 + 95, 41); // new Date(1998 + 90, 9, 7);
+
+      const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+
+      const colorRanges = {
+        "c1998w48": { until: "c2018w1", c: 0 },
+        "c2005w1": { until: "c2015w52", c: 1 },//TODO: Conferir data
+        "c2014w1": { until: "c2016w52", c: 2 },
+        "c2017w1": { until: "c2017w52", c: 3 },
+        "c2018w1": { until: "c2021w52", c: 4 },
+        "c2022w1": { until: "c2030w40", c: 5 },
+        // "c2006w41": { until: "c2009w10", c: 4},
+        // "c2009w11": { until: "c2011w25", c: 5},
+        // "c2011w26": { until: "c2014w20", c: 6},
+        // "c2014w21": { until: "c2025w52", c: 7},
+      }
+
+      const notes = {}
+      function populateNode(k, type, title, description, color, img) {
+        if (notes[k]) console.error(`key ${k} alread exists ("${notes[k]}" vs "${note}")`);
+        const image = img ? `<img src='assets/${img}'>` : '';
+        notes[k] = { type, color: color, title: title, image: image, description: description }
+      }
+
+      // populateNode(add(59, 7, 6), "cmp", "Life expectancy of men born in 1998 in Brazil. 59.6 years.");
+      // populateNode(add(74, 1, 1), "cmp", "HALE life expectancy of men born in 1998 in Canada. 74 years.");
+      // populateNode(delta(1964, 11, 4, 1998, 11, 27), "cmp", "The age my father was when I was born.");
+      // populateNode(delta(1967, 8, 22, 1998, 11, 27), "cmp", "The age my mom was when I was born.");
+      // populateNode(delta(1927, 2, 13, 1999, 2, 19), "cmp", "The age my maternal grandfather died.");
+      // populateNode(delta(1927, 2, 13, 1999, 2, 19), "cmp", "The age my maternal grandfather died.");
+      // populateNode(delta(1928, 7, 25, 2021, 4, 1), "cmp", "The age my paternal grandfather died.");
+
+
+      function getOrdinalNum(n) {
+        return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '');
+      }
+
+      function processData(data) {
+        data.forEach(item => {
+          const date = new Date(item.date);
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1; // JavaScript months are 0-indexed
+          const day = date.getDate();
+
+          const weekString = real(year, month, day);
+
+          populateNode(weekString, item.category, item.title, item.description, item.color, item.img);
+
+        });
+      }
+
+      function setUp() {
+        const table = document.getElementById("life");
+
+        var database = [
+          {
+            "date": "1998-11-27",
+            "color": "#444",
+            "category": "life",
+            "title": "Nascimento",
+            "description": "blablabla"
+          },
+          {
+            "date": "2014-06-02",
+            "color": "#778866",
+            "category": "cursos",
+            "title": "Primeiro contato com programação",
+            "img": "",
+            "description": "Curso de introdução a logica de programação na Impacta"
+          },
+          {
+            "date": "2015-03-07",
+            "color": "#778866",
+            "category": "cursos",
+            "title": "Curso Java",
+            "img": "",
+            "description": "Curso Java Programmer na Impacta"
+          },
+          {
+            "date": "2015-01-05",
+            "color": "#778866",
+            "category": "cursos",
+            "title": "Curso SQL",
+            "img": "",
+            "description": "Curso SQL 2014 - Módulo I na Impacta"
+          },
+          {
+            "date": "2020-05-11",
+            "color": "#778866",
+            "category": "cursos",
+            "title": "Curso BI",
+            "img": "",
+            "description": "Curso SQL 2019 - Business Intelligence na Impacta"
+          },
+          {
+            "date": "2020-03-09",
+            "color": "#556677",
+            "category": "work",
+            "title": "Estágio Arbit",
+            "img": "",
+            "description": "Contratação como estagiario na Arbit Consultoria"
+          },
+          {
+            "date": "2021-03-01",
+            "color": "#556677",
+            "category": "work",
+            "title": "Efetivação como Consultor Junior I",
+            "img": "",
+            "description": "Efetivação como Consultor Junior I na Arbit Consultoria"
+          },
+          {
+            "date": "2022-01-02",
+            "color": "#556677",
+            "category": "work",
+            "title": "Promoção como Consultor Pleno III",
+            "img": "",
+            "description": "Promoção como Consultor Pleno III na Arbit Consultoria"
+          },
+          {
+            "date": "2022-07-01",
+            "color": "#556677",
+            "category": "work",
+            "title": "Promoção como Consultor Experiente II",
+            "img": "",
+            "description": "Promoção como Consultor Experiente II na Arbit Consultoria"
+          },
+          {
+            "date": "2022-03-04",
+            "color": "#444",
+            "category": "life",
+            "title": "Nascimento da Tequila",
+            "img": "tequilaBebe.png",
+            "description": ""
+          },
+          {
+            "date": "2022-07-23",
+            "color": "#444",
+            "category": "life",
+            "title": "Adoção da Tequila",
+            "img": "adocaoTequila.png",
+            "description": ""
+          },
+          {
+            "date": "2018-12-08",
+            "color": "#8B0000",
+            "category": "love",
+            "title": "Primeiro beijo",
+            "img": "",
+            "description": ""
+          },
+          {
+            "date": "2019-04-04",
+            "color": "#8B0000",
+            "category": "love",
+            "title": "Inicio primeiro namoro",
+            "img": "",
+            "description": ""
+          },
+          {
+            "date": "2021-02-25",
+            "color": "#8B0000",
+            "category": "love",
+            "title": "Termino primeiro namoro",
+            "img": "",
+            "description": ""
+          }
+          // ... more entries
+        ];
+        processData(database)
+
+        let curColorRange = null;
+
+        for (let year = 1998; year <= 1998 + 95; ++year) {
+          const row = document.createElement("div");
+          row.classList.add("year");
+
+          const y = document.createElement("div");
+          y.classList.add("yearname");
+          row.appendChild(y);
+
+          const age = year - 1998;
+          if (year == 1998) {
+            y.innerText = "Novembro 27th, 1998";
+            y.classList.add("boldyear");
+          } else if (year == today.getUTCFullYear()) {
+            y.innerText = `${monthNames[today.getMonth()]} ${getOrdinalNum(today.getDate())}, ${today.getUTCFullYear()}`;
+            y.classList.add("boldyear");
+          } else if (age % 10 == 0) {
+            y.innerText = `${age} years old`;
+          } else if (year % 5 == 0) {
+            y.innerText = year;
+          }
+
+          const ws = document.createElement("div");
+          ws.classList.add("weeks");
+          if (year % 5 == 0) {
+            ws.classList.add("markyear");
+          }
+
+          for (let week = 1; week <= 52; ++week) {
+            const cell = document.createElement("div");
+            cell.classList.add("week");
+            const id = cell.id = `c${year}w${week}`;
+            const t = getDateOfWeek(year, week);
+
+            if (colorRanges[id]) {
+              curColorRange = colorRanges[id];
+            }
+
+            if (curColorRange && t <= today) {
+              cell.style.backgroundColor = `var(--c${curColorRange.c})`;
+            }
+
+            if (curColorRange && curColorRange.until == id) {
+              curColorRange = null;
+            }
+
+            if (t < birthday || t > lastday) {
+              cell.classList.add("beforeborn");
+            } else if (t > today) {
+              cell.classList.add("future");
+            }
+
+            const sq = document.createElement("div");
+            sq.classList.add("cell");
+
+            const noteData = notes[id];
+            if (noteData) {
+              note = document.createElement("div");
+              note.classList.add("note");
+              // sq.classList.add("cnote_" + n.type);
+              note.innerHTML = noteData.image;
+              sq.style.backgroundImage = `linear-gradient(to bottom right, ${noteData.color} 50%, rgba(0, 0, 0, 0) 50%)`;
+              // Create the content for the note
+              const title = document.createElement("div");
+              title.classList.add("note-title");
+              title.innerText = noteData.title;
+
+              const description = document.createElement("div");
+              description.classList.add("note-description");
+              description.innerText = noteData.description;
+
+              // Append title and description to the note
+              note.appendChild(title);
+              note.appendChild(description);
+              sq.appendChild(note);
+            }
+
+            cell.appendChild(sq);
+            ws.appendChild(cell);
+          }
+
+          row.appendChild(ws);
+          table.appendChild(row);
+        }
+
+      }
+
+      setUp();
+
+    </script>
+
+
+    <!-- <div id="footer"><img id="footerF" src="../assets/F.png"></div> -->
+  </div>
+
+
+</body>
+
+</html>

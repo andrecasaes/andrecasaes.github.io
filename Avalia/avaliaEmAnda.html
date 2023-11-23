@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Avalia.me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+    <div class="header"><h1>Avaliar (Nome)</h1></div>
+    <div class="headerForm">
+        <input type="button" name="Etica" value="Etica" onclick="Et();" id="botEt" class="botaoForm botaoFormMaisEscuro">
+        <input type="button" name="Conhecimento Tecnico" value="Conhecimento Tecnico" id="botCt" onclick="Ct();" class="botaoForm botaoFormMaisEscuro">
+        <input type="button" name="Desempenho" value="Desempenho" onclick="De();" id="botDe" class="botaoForm botaoFormMaisEscuro">
+        <input type="button" name="Comportamento" value="Comportamento" onclick="Co();" id="botCo" class="botaoForm">
+        <input type="button" name="Responsabilidade" value="Responsabilidade" onclick="Re();" id="botRe" class="botaoForm">
+    </div>
+    <br>
+    <h1 style="text-align: center; font-family: 'Press Start 2P', cursive; font-size: 80%" id="inicio">Selecione a categoria que deseja avaliar!</h1>
+    <!-- -------------------------------------------------ETICA------------------------------------------------------------------ -->
+    <div class="linhas2" id="Et">
+        <div>
+            <h2>Atribua uma nota de 1 a 5 para avaliar pontos que podem comprometer a imagem da empresa.</h2>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) respeita as regras da empresa?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta1">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta1">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta1">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta1" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta1">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) tem cuidado com o patrim&ocirc;nio da empresa?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta2" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta2">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta2">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas" class="ultimaTextarea">O funcionario não tem cuidado com seus materiais, seu teclado e sua mesa sempre estao sujos </textarea>
+        </div>
+    </div>
+    <!-- -------------------------------------------------Conhecimento Tecnico------------------------------------------------------------------ -->
+    <div class="linhas2" id="Ct">
+        <div>
+            <h2>Atribua uma nota de 1 a 5 para mensurar problemas que comprometam a qualidade esperada dos produtos da empresa.</h2>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) se empenha nas suas atividades?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta3">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta3" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta3">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) aplica os conhecimentos t&eacute;cnicos que possui?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta4" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta4">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta4">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; criativo na resolu&ccedil;&atilde;o de problemas t&eacute;cnicos?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta5" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta5">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta5">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas">O funcionario sempre resolve os problemas usando as mesmas ferramentas.</textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) se atualiza nos seus conhecimentos t&eacute;cnicos?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta6" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta6">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta6">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas" class="ultimaTextarea"></textarea>
+        </div>
+    </div>
+    <!-- -------------------------------------------------Desempenho------------------------------------------------------------------ -->
+    <div class="linhas2" id="De">
+        <div>
+            <h2>Atribua uma nota de 1 a 5 para avaliar crit&eacute;rios que afetam a entrega eficiente dos produtos da empresa.</h2>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; pontual e ass&iacute;duo(a)?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta7">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta7">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta7">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta7" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta7">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; motivado(a) no seu trabalho?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta8" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta8">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta8">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; proativo(a)?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta9">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta9">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta9" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta9">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta9">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas">O funcionario nao é proativo, ele sempre espera as tarefas serem designadas a ele</textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) tem disposi&ccedil;&atilde;o para realizar suas tarefas?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta10">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta10">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta10" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta10">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta10">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; eficiente no seu trabalho?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta11">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta11">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta11">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta11" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta11">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; comprometido(a)?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta12" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta12">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta12">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) passa muito tempo ocioso durante o expediente?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta13">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta13">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta13">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta13">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta13" checked>
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas">O funcionario nao passa tempo ocioso no horario de trabalho</textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) acompanha o rendimento m&eacute;dio dos demais funcion&aacute;rios(as) da empresa?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta14">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta14">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta14" checked>
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta14">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta14">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas" class="ultimaTextarea"></textarea>
+        </div>
+    </div>
+    <!-- -------------------------------------------------Comportamento------------------------------------------------------------------ -->
+    <div class="linhas2" id="Co">
+        <div>
+            <h2>Atribua uma nota de 1 a 5 para analisar as habilidades de relacionamentos interpessoais do(a) funcion&aacute;rio(a) que
+            influenciam no seu desempenho profissional.</h2>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) &eacute; paciente?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta15">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta15">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta15">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta15">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta15">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) respeita todos os indiv&iacute;duos da empresa?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta16">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta16">
+                <span class="checkmark"></span>
+            </label>
+            
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) tenta solucionar os conflitos da melhor forma poss&iacute;vel para todos?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta17">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta17">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta17">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta17">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta17">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) auxilia os membros da sua equipe quando necess&aacute;rio?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta18">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta18">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta18">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta18">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta18">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) contribui para um ambiente de conv&iacute;vio saud&aacute;vel?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta19">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta19">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta19">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta19">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta19">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) tem respeito pela autoridade?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta20">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta20">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta20">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta20">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta20">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) se comporta adequadamente quando esta sob press&atilde;o?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta21">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta21">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta21">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta21">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta21">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(a) funcion&aacute;rio(a) tem uma boa organiza&ccedil;&atilde;o?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta22">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta22">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta22">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta22">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta22">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas" class="ultimaTextarea"></textarea>
+        </div>
+    </div>
+    <!-- -------------------------------------------------Responsabiliade------------------------------------------------------------------ -->
+    <div class="linhas2" id="Re">
+        <div>
+            <h2>Atribua uma nota de 1 a 5 para detectar problemas que comprometam os prazos de entrega dos produtos.</h2>
+            <p style="text-align: left;">O(A) funcion&aacute;rio(a) toma decis&otilde;es assertivas de maneira eficiente?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta23">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta23">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta23">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta23">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta23">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(A) funcion&aacute;rio(a) respeita os prazos estabelecidos de entrega?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta24">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta24">
+                <span class="checkmark"></span>
+            </label>
+            
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(A) funcion&aacute;rio(a) possui boas habilidades administrativas?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta25">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta25">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta25">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta25">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta25">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(A) funcion&aacute;rio(a) entrega softwares de qualidade?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta26">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta26">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta26">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta26">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta26">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas"></textarea>
+        </div>
+        <div>
+            <p style="text-align: left;">O(A) funcion&aacute;rio(a) leva um tempo no desenvolvimento de software maior que a m&eacute;dia da equipe?</p>
+            <span>1</span>
+            <label class="container">
+                <input type="radio" name="pergunta27">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta27">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta27">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta27">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container">
+                <input type="radio" name="pergunta27">
+                <span class="checkmark"></span>
+            </label>
+            <span>5</span>
+            <br>
+            <textarea name="perguntas" class="ultimaTextarea"></textarea>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="EsqueciSenha"><input class="botaoFooter" type="button" value="Voltar" onclick="voltar();"></div>
+        <div class="CadastroAdmin" style="text-align: right;"><input class="botaoFooter" type="button" value="Avaliar" onclick="Enviar();"></div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    var PreEt = true;
+    var PreCt = true;
+    var PreDe = true;
+    var PreCo = false;
+    var PreRe = false;
+    Co();
+    function voltar() {
+            window.history.back();
+        }
+    function Enviar() {
+
+            if (!PreEt) {
+                PreEt = true;
+                document.getElementById("botEt").className = "botaoFormMaisEscuro";
+                Ct();
+            } else if (PreEt && !PreCt) {
+                PreCt = true;
+                document.getElementById("botCt").className = "botaoFormMaisEscuro";
+                De();
+            } else if (PreEt && PreCt && !PreDe) {
+                PreDe = true;
+                document.getElementById("botDe").className = "botaoFormMaisEscuro";
+                Co();
+            } else if (PreEt && PreCt && PreDe && !PreCo) {
+                PreCo = true;
+                document.getElementById("botCo").className = "botaoFormMaisEscuro";
+                Re();
+            } else if (PreEt && PreCt && PreDe && PreCo && !PreRe) {
+                PreRe = true;
+                document.getElementById("botRe").className = "botaoFormMaisEscuro";
+                alert("Funcionario avaliado com sucesso!");
+                window.open("relatorio.html", "_self");
+            }
+        }
+    function Et() {
+        document.getElementById("Et").style.display = "inline";
+        document.getElementById("Ct").style.display = "none";
+        document.getElementById("De").style.display = "none";
+        document.getElementById("Co").style.display = "none";
+        document.getElementById("Re").style.display = "none";
+        document.getElementById("inicio").style.display = "none";
+    }
+    function Ct() {
+        document.getElementById("Et").style.display = "none";
+        document.getElementById("Ct").style.display = "inline";
+        document.getElementById("De").style.display = "none";
+        document.getElementById("Co").style.display = "none";
+        document.getElementById("Re").style.display = "none";
+        document.getElementById("inicio").style.display = "none";
+    }
+    function De() {
+        document.getElementById("Et").style.display = "none";
+        document.getElementById("Ct").style.display = "none";
+        document.getElementById("De").style.display = "inline";
+        document.getElementById("Co").style.display = "none";
+        document.getElementById("Re").style.display = "none";
+        document.getElementById("inicio").style.display = "none";
+    }
+    function Co() {
+        document.getElementById("Et").style.display = "none";
+        document.getElementById("Ct").style.display = "none";
+        document.getElementById("De").style.display = "none";
+        document.getElementById("Co").style.display = "inline";
+        document.getElementById("Re").style.display = "none";
+        document.getElementById("inicio").style.display = "none";
+    }
+    function Re() {
+        document.getElementById("Et").style.display = "none";
+        document.getElementById("Ct").style.display = "none";
+        document.getElementById("De").style.display = "none";
+        document.getElementById("Co").style.display = "none";
+        document.getElementById("Re").style.display = "inline";
+        document.getElementById("inicio").style.display = "none";
+    }
+</script>
+
+<style>
+/* Permite que as perguntas não apareçam tudo de uma vez */
+.linhas2{
+    display: none;
+}
+</style>
